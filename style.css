@@ -42,7 +42,7 @@ header {
   width: 90px;
   height: auto;
 }
-/* container-calc */
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -59,4 +59,174 @@ header {
     height: auto;
     width: 100%;
   }
+}
+.container-calc {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0;
+}
+.container-result {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 30px;
+  background-color: var(--very-dark-cyan);
+}
+h1 {
+  color: var(--dark-grayish-cyan);
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.container-percentage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tip-percentage {
+  width: 116px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  background-color: var(--very-dark-cyan);
+  border-radius: 6px;
+
+  font-size: var(--big-text);
+}
+
+#custom {
+  color: var(--dark-grayish-cyan);
+  background-color: var(--very-light-grayish-cyan);
+  text-align: center;
+}
+
+.customtip {
+  outline: 2px solid var(--strong-cyan-primary);
+}
+
+.tip-percentage:hover,
+.clicked {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan-primary);
+  cursor: pointer;
+}
+
+input[type='tel'].tip-custom {
+  width: 116px;
+  height: 48px;
+}
+
+/*input fields*/
+.container-input {
+  position: relative;
+  border: 0;
+}
+
+#title-responsive {
+  padding-top: 15px;
+}
+
+.icon {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+::placeholder {
+  color: var(--grayish-cyan);
+}
+
+input[type='tel'] {
+  width: 100%;
+  height: 44px;
+
+  background-color: var(--very-light-grayish-cyan);
+  border: 0;
+  border-radius: 6px;
+
+  font-size: var(--big-text);
+  text-align: right;
+
+  color: var(--very-dark-cyan);
+
+  padding-right: 20px;
+}
+
+#bill,
+#people {
+  min-width: 300px;
+}
+input[type='number']:hover {
+  cursor: pointer;
+}
+
+input[type='number']:focus {
+  outline: none;
+  cursor: pointer;
+  border: 2px solid var(--strong-cyan-primary);
+}
+
+.cantzero {
+  outline: 2px solid rgb(255, 77, 0);
+}
+
+.error {
+  padding-left: 15px;
+  font-size: 12px;
+  color: rgb(255, 77, 0);
+}
+
+/* Result cards */
+
+.container-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-result {
+  color: var(--very-light-grayish-cyan);
+  padding-bottom: 0;
+}
+
+.subtitle-result {
+  color: var(--grayish-cyan);
+  font-size: 12px;
+}
+
+.result-value {
+  color: var(--strong-cyan-primary);
+  font-size: 35px;
+}
+
+button {
+  height: 45px;
+  font-size: var(--big-text);
+  background-color: var(--strong-cyan-primary);
+  color: var(--very-dark-cyan);
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-cyan);
 }
