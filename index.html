@@ -19,19 +19,63 @@
         <img id="logo" src="./images/logo.svg" alt="splitter logo" />
       </header>
       <div class="container">
-				<!--Fieldset element in HTML is used to group related elements within a form. also useful for organizing and structuring forms, making them more user-friendly and easier to understand.-->
-				<fieldset>
-					</fieldset>
-<div class="container-result">
-  <div class="container-output">
-    <div class="container-card">
-      <div class="result-card">
-  <h1 class="title-result">Tip Amount</h1>
-  <h2 class="subtitle-result">/ person</h2>
-</div>
-
-				</fieldset>
-
+        <fieldset class="container-calc">
+          <div>
+            <h1 class="title-calc">
+              Bill<span id="bill-error" class="error"></span>
+            </h1>
+            <div class="container-input">
+              <img
+                class="icon"
+                src="./images/icon-dollar.svg"
+                alt="Dollar Sign Icon"
+              />
+              <input
+                id="bill"
+                class="number-input"
+                type="tel"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div>
+            <h1 id="title-responsive" class="title-calc">
+              Select Tip %<span id="tip-error" class="error"></span>
+            </h1>
+            <div class="container-percentage">
+              <div id="5" class="tip-percentage">5%</div>
+              <div id="10" class="tip-percentage">10%</div>
+              <div id="15" class="tip-percentage">15%</div>
+              <div id="25" class="tip-percentage">25%</div>
+              <div id="50" class="tip-percentage">50%</div>
+              <input
+                id="custom"
+                class="tip-custom"
+                type="tel"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <div>
+            <h1 id="title-responsive" class="title-calc">
+              Number of People<span id="people-error" class="error"></span>
+            </h1>
+            <div class="container-input">
+              <img
+                class="icon"
+                src="./images/icon-person.svg"
+                alt="Person Icon"
+              />
+              <input
+                id="people"
+                class="number-input"
+                type="tel"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </div>
     </main>
   </body>
 </html>
