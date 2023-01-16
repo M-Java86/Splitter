@@ -15,3 +15,48 @@
 body {
   background-color: var(--light-grayish-cyan);
 }
+/* main class added flexbox */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+header {
+  width: auto;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 30px;
+  margin: 30px auto;
+}
+/* Splitter logo*/
+#logo {
+  width: 90px;
+  height: auto;
+}
+/* container-calc */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 920px;
+  height: 480px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: var(--white);
+}
+@media screen and (max-width: 644px) {
+  .container {
+    height: auto;
+    width: 100%;
+  }
+}
